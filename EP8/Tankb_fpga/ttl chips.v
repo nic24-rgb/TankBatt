@@ -78,7 +78,7 @@ module ls107(
 );
 
 assign qnot=~q;
-  always @(negedge clk) begin
+  always @(negedge clk or negedge clear) begin
 	if (!clear) q<=1'b0; else
 		case ({j, k})
 		2'b00: q<=q;
