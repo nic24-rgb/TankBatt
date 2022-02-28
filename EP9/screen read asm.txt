@@ -1,0 +1,26 @@
+LDY #$00
+LL0 LDA $FB00,Y
+STA $0200,Y
+INY
+CPY #$1F
+BNE LL0
+BRK
+
+
+	  F800  F801  F802  F803  F804  F805  F806  F807
+0000: A0    00    B9    00    FB    99    00    02
+
+	  F808  F809  F80A  F80B  F80C  F80D
+0008: C8    C0    1F    D0    F5    00
+
+
+LOC   CODE         LABEL     INSTRUCTION
+
+F800  A0 00                  LDY #$00
+F802  B9 00 FB     LL0       LDA $FB00,Y
+F805  99 00 02               STA $0200,Y
+F808  C8                     INY
+F809  C0 1F                  CPY #$1F
+F80B  D0 F5                  BNE $0002
+F80D  00                     BRK
+
