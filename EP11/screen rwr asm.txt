@@ -1,0 +1,69 @@
+LDY #$00
+LL0 LDA $FB00,Y
+STA $0200,Y
+INY
+CPY #$1F
+BNE LL0
+LDY #$00
+LDA #$02
+STA $01
+LDA #$00
+STA $00
+LL1 LDA ($00),Y
+INY
+CPY #$1F
+BNE LL1
+BRK
+
+0000: A0 00 B9 00 FB 99 00 02
+0008: C8 C0 1F D0 F5 A0 00 A9
+0010: 02 85 01 A9 00 85 00 B1
+0018: 00 C8 C0 1F D0 F9 00
+
+pass 1
+
+LINE  LOC          LABEL     PICT
+
+   1  0000                   LDY #$00
+   2  0002         LL0       LDA $FB00,Y
+   3  0005                   STA $0200,Y
+   4  0008                   INY
+   5  0009                   CPY #$1F
+   6  000B                   BNE LL0
+   7  000D                   LDY #$00
+   8  000F                   LDA #$02
+   9  0011                   STA $01
+  10  0013                   LDA #$00
+  11  0015                   STA $00
+  12  0017         LL1       LDA ($00),Y
+  13  0019                   INY
+  14  001A                   CPY #$1F
+  15  001C                   BNE LL1
+  16  001E                   BRK
+
+symbols
+ LL0          $02
+ LL1          $17
+
+pass 2
+
+LOC   CODE         LABEL     INSTRUCTION
+
+0000  A0 00                  LDY #$00
+0002  B9 00 FB     LL0       LDA $FB00,Y
+0005  99 00 02               STA $0200,Y
+0008  C8                     INY
+0009  C0 1F                  CPY #$1F
+000B  D0 F5                  BNE $0002
+000D  A0 00                  LDY #$00
+000F  A9 02                  LDA #$02
+0011  85 01                  STA $01
+0013  A9 00                  LDA #$00
+0015  85 00                  STA $00
+0017  B1 00        LL1       LDA ($00),Y
+0019  C8                     INY
+001A  C0 1F                  CPY #$1F
+001C  D0 F9                  BNE $0017
+001E  00                     BRK
+
+done (code: 0000..001E).
