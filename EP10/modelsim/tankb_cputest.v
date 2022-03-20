@@ -30,8 +30,8 @@ wire r_w;
 wire [7:0] cpudata_in,cpudata_out;
 
 arlet_6502 my_cpu(
-    .clk    (Phi2),
-    .enable (1'b1),
+    .clk    (clk),
+    .enable (cpu_clken),
     .rst_n  (nRESET),
     .ab     (A),
     .dbi    (cpudata_in),
@@ -39,7 +39,7 @@ arlet_6502 my_cpu(
     .we     (r_w),
     .irq_n  (1'b1),
     .nmi_n  (1'b1),
-    .ready  (1'b1),
+    .ready  (cpu_clken),
     .pc_monitor ()
     );
 
