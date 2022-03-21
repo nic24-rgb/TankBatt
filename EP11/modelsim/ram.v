@@ -28,7 +28,7 @@ module ram2114
 	always @ (posedge clk)
 	begin
 		// Write
-		if (we)
+		if (!we)
 			ram[addr] <= data;
 
 		addr_reg <= addr;
@@ -67,7 +67,7 @@ module ram2114_DP
 	// Port A 
 	always @ (posedge clk)
 	begin
-		if (we_a) 
+		if (!we_a) 
 		begin
 			ram[addr_a] <= data_a;
 			q_a <= data_a;
@@ -81,7 +81,7 @@ module ram2114_DP
 	// Port B 
 	always @ (posedge clk)
 	begin
-		if (we_b) 
+		if (!we_b) 
 		begin
 			ram[addr_b] <= data_b;
 			q_b <= data_b;
