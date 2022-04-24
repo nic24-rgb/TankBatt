@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="scandubclk_pll_sim/scandubclk_pll.vo" type="VERILOG" />
+ <topLevel name="scandubclk_pll" />
+ <deviceFamily name="cyclonev" />
+</simPackage>
