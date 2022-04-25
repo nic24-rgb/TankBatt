@@ -1,0 +1,77 @@
+D:/Youtube/EP12/Sim/tankb.v {1 {vlog -work work D:/Youtube/EP12/Sim/tankb.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tankb_top
+
+Top level modules:
+	tankb_top
+
+} {} {}} D:/Youtube/EP12/Sim/ram.v {1 {vlog -work work D:/Youtube/EP12/Sim/ram.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ram2114
+-- Compiling module ram2114_DP
+
+Top level modules:
+	ram2114
+	ram2114_DP
+
+} {} {}} D:/Youtube/EP12/Sim/cpu.v {1 {vlog -work work D:/Youtube/EP12/Sim/cpu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
+} {} {}} D:/Youtube/EP12/Sim/clock.v {1 {vlog -work work D:/Youtube/EP12/Sim/clock.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module clock
+
+Top level modules:
+	clock
+
+} {} {}} D:/Youtube/EP12/Sim/arlet_6502.v {1 {vlog -work work D:/Youtube/EP12/Sim/arlet_6502.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module arlet_6502
+
+Top level modules:
+	arlet_6502
+
+} {} {}} D:/Youtube/EP12/Sim/rom.v {1 {vlog -work work D:/Youtube/EP12/Sim/rom.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module rom2716_cs
+-- Compiling module prom7052_cs
+-- Compiling module rom2716_mrw
+
+Top level modules:
+	rom2716_cs
+	prom7052_cs
+	rom2716_mrw
+
+} {} {}} D:/Youtube/EP12/Sim/ALU.v {1 {vlog -work work D:/Youtube/EP12/Sim/ALU.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {D:/Youtube/EP12/Sim/ttl chips.v} {1 {vlog -work work {D:/Youtube/EP12/Sim/ttl chips.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ls74
+-- Compiling module ls107
+-- Compiling module ls161
+-- Compiling module ls273
+-- Compiling module ls166
+-- Compiling module ls174
+-- Compiling module ls139
+-- Compiling module ls157
+
+Top level modules:
+	ls74
+	ls107
+	ls161
+	ls273
+	ls166
+	ls174
+	ls139
+	ls157
+
+} {} {}}
