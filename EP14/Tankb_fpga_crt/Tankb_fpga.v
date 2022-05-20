@@ -482,11 +482,6 @@ assign F3_out=!(H256 & H2_sigma[3] & H2_sigma[2] & H2_sigma[1] & H2_sigma[0] & H
 	.c_out()
   );
 
-wire [7:0] H2H3_Ain;//is this redundant?
-assign H2H3_Ain = {V128,V64,V32,V16,V8,V4,V2,V1};//is this redundant?
-wire [7:0] H2H3_out;//is this redundant?
-assign H2H3_out = {H2_sigma,H3_sigma};//is this redunddant?
-
 wire D2_d,E3_1_nq;
 assign E4_11=!(H3_sigma[1] & H3_sigma[0]);
 
