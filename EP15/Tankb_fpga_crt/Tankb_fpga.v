@@ -8,7 +8,7 @@ module Tankb_fpga(
 	input BTN_RESET,
 	input BTN_OSD,
 	input BTN_USER,
-	input [4:0] BUTTONS
+	//input [4:0] BUTTONS
 );
 
 //power-on reset
@@ -567,7 +567,7 @@ ls163 icF2(
 	ls251 icE7(
 		.CBA(A[2:0]),
 		.s(nIN0),
-		.D({IN0[7:6],BTN_USER,BUTTONS[4:0]}),
+		.D({IN0[7:6],BTN_USER,IN0[4:0]}),
 		.Y(IN0_Y),
 		.W()
 	);	
